@@ -33,7 +33,7 @@ if (isset($_POST['email'])) {
 
 		<h3>Example Scripts:</h3>
 		<p>'; SELECT sleep(10); --</p>
-		
+		<p>'; DROP TABLE forum_topics; --</p>
 
 
 	</body>
