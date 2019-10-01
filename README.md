@@ -9,5 +9,5 @@ Need to initialize mySQL Database accordingly...
 Fields:     Type:           Collation:      Attributes:     Null:       Default:
 id (key)    int(11)                         unnsigned       no          none
 email       varchar(255)    latin1                          yes         NULL
-password    (same as email -->)
-username    (same as email -->)
+password    (same as email ->)
+username    (same as email ->)
