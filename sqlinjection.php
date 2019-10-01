@@ -1,9 +1,11 @@
 <?php
 
-$db = new PDO('mysql:host=127.0.0.1; dbname=website', 'root', 'root');
+$db = new PDO('mysql:host=127.0.0.1; dbname=demoinjection', 'root', '');
 
 if (isset($_POST['email'])) {
 	$email = $_POST['email'];
+
+	// die($email);				// display the value of input variable $email
 
 	$user = $db->query("SELECT * FROM users WHERE email = '{$email}'");
 
@@ -28,5 +30,11 @@ if (isset($_POST['email'])) {
 			</label>
 			<input type="submit" value="Recover">
 		</form>
+
+		<h3>Example Scripts:</h3>
+		<p>'; SELECT sleep(10); --</p>
+		
+
+
 	</body>
 </html>
